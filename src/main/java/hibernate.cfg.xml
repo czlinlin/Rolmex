@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://192.168.226.71:3306/dw_oa</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <mapping class="com.mossle.pim.persistence.domain.WorkReportAttachment"/>
+        <mapping class="com.mossle.pim.persistence.domain.WorkReportCc"/>
+        <mapping class="com.mossle.pim.persistence.domain.WorkReportForward"/>
+        <mapping class="com.mossle.pim.persistence.domain.WorkReportInfo"/>
+        <mapping class="com.mossle.worktask.persistence.domain.WorkTaskCc"/>
+        <mapping class="com.mossle.worktask.persistence.domain.WorkTaskInfo"/>
+        <mapping class="com.mossle.project.persistence.domain.WorkProjectInfo"/>
+        <mapping class="com.mossle.project.persistence.domain.WorkProjectNotify"/>
+        <mapping class="com.mossle.project.persistence.domain.WorkProjectTaskbind"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>

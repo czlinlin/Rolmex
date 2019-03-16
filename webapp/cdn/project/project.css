@@ -1,0 +1,28 @@
+/*������*/
+.blankrangle{border:1px solid #000;width:200px;height:22px;font-size:12px;color:#333;text-align:center;position:relative;}
+.green{background:green;}
+.red{background:red;}
+.yellow{background:#996633;}
+
+.percent{margin:0 auto;text-align:center;}
+.percent img{width:25px;height:25px;}
+
+.task_progress{background-color:none;background-image:none;position:absolute;left:0;top:0;height:20px;font-size:10px;line-height:20px;border-radius:0;}
+.div_progress{text-align:center;z-index:1000;background:none;width:100%;}
+.target_progress{z-index:997;}
+.actual_progress{z-index:998;}
+/*red*/
+.target_red{background-color: #f4d3cb;}
+.actual_red{ background-color: #e74747;}
+
+/*yellow*/
+.target_yellow{background-color: #fcedd0;}
+.actual_yellow{ background-color: #fbb03b;}
+
+/*green*/
+.target_green{background-color: #8ecf56;}
+.actual_green{ background-color: #009245;}
+
+/*white*/
+.target_white{background-color: #fff;}
+.actual_white{ background-color: #fff;}

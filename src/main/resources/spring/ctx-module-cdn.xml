@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="cdnServletRegister" class="com.mossle.cdn.CdnServletRegister">
+		<property name="baseDir" value="${store.baseDir}"/>
+	</bean>
+
+	<bean id="webAPI" class="com.mossle.common.utils.WebAPI">
+		<property name="uploadUrl" value="${upload_url}"/>
+		<property name="downloadUrl" value="${download_url}"/>
+		<property name="viewUrl" value="${view_url}"/>
+		<property name="autostartup" value="$quartz.autostartup}"/>
+	</bean>
+	
+	<bean id="fileUploadAPI" class="com.mossle.common.utils.FileUploadAPI"/>
+
+</beans>
